@@ -1,6 +1,118 @@
-#about {
-    margin: 20px;
-    background: black;
-    opacity: .5;
-    padding: 20px;
+.about_container {
+    display: grid;
+    grid-template-columns: 35% 50%;
+    grid-template-rows: 20% 35%;
+    gap: 15%;
+}
+
+.about_me {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 2rem;
+    background: linear-gradient(45deg, transparent, var(--color-primary),transparent
+    );
+    display: grid;
+    place-items: center;
+}
+
+.about-image {
+    border-radius: 1rem;
+    overflow:hidden;
+    transform-origin: rotate(10deg);
+}
+.about-image:hover {
+    transform: rotate(0deg);
+    transition: var(--transition);
+}
+.about_cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.about_card {
+    background: var(--color-bg-variant);
+    border: 1px solid;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.about_card:hover {
+    background: transparent;
+    border-color: var(--color-primary-var);
+    cursor: default;
+}
+
+.about_icon {
+    color: var(--color-primary);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.about_card h5 {
+    font-size:.95rem;
+}
+
+.about_card small {
+    font-size: .7rem;
+    color: var(--color-light);
+}
+
+.about_content {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1.5rem
+}
+
+.about_content p {
+    margin: 2rem 0 2.6rem;
+    color: var(--color-light)
+}
+.center {
+    text-align: center;
+    margin: 3rem;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .about-image {
+        visibility: hidden;
+    }
+    .about_container {
+        grid-template-columns: 1fr;
+       gap: 0;
+    }
+
+    .about_me {
+        width:50%;
+        margin: 2rem auto 4rem;
+        background: transparent;
+    }
+
+    .about_content p {
+        margin: 1rem 0 1.5rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .about-image {
+        visibility: hidden;
+    }
+    .about_me {
+        width: 65%;
+        margin: 0 auto 3rem;
+        background: transparent;
+    }
+    .about_cards {
+        grid-template-columns: 1fr 1fr;
+    }
+    .about_content {
+        text-align:center;
+    }
+    .about_content p {
+        margin: 1.5rem 0;
+    }
 }

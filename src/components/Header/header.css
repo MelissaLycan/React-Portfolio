@@ -64,8 +64,8 @@ header {
 
 @media screen and (max-width: 1024px) {
     .container {
-        background: var(--color-white);
-        color:black;
+        background: transparent;
+        color: var(--color-white);
     }
     header {
         height: 68vh;
@@ -77,9 +77,6 @@ header {
 }
 
 @media screen and (max-width: 650px) {
-    .container {
-        background: var(--color-bg);
-    }
 
     section>h2 {
         margin-bottom: 2rem;
