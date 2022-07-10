@@ -1,5 +1,6 @@
 import React from "react";
 import image from "../../assets/images/Melissa-Lycan-logo.gif";
+import './footer.css';
 
 export function Footer() {
   const icons = [

@@ -24,7 +24,7 @@ const Contact = () => {
     alert(result.status);
   };
   return (
-    <form onSubmit={handleSubmit}>
+    <form id="contact" onSubmit={handleSubmit}>
       <div>
         <label htmlFor="name">Name:</label>
         <input type="text" id="name" required />

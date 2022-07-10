@@ -1,18 +1,24 @@
 import React from "react";
-import image from "../../assets/images/Melissa-Lycan-logo.gif";
-import NavTabs from "../Navigation/Navigation";
+import Call from './Call'
+import ME from '../../assets/images/MelissaLycan.jpg'
+import Socials from './Socials'
+import './header.css'
 
 export function Header() {
   return (
-    <header className="container bg-dark w-100 in-line flex-row px-1 justify-space-around">
-      <a href="https://www.melissalycan.com">
-        <img
-          src={image}
-          alt="logo made of geometric shapes that form a symbol from the letters of Melissa Lycan"
-        ></img>
-      </a>
-      <h1>Melissa Lycan</h1>
-      < NavTabs />
+    <header id="home">
+      <div className="container bg-dark w-100 in-line d-flex flex-row px-1 justify-space-around">
+      <h5 id="center" className="">Hello I'm</h5>
+      <h1 id="center">Melissa Lycan</h1>
+      <h5 id="center"className="text-light">Full Stack Developer</h5>
+      <Call />
+      <Socials />
+      
+      <div className= "me">
+        <img src={ ME } alt="Melissa Lycan"/>
+      </div>
+      <a href="#projects" className='scroll_down'>Scroll Down</a>
+      </div>
     </header>
   );
 }
