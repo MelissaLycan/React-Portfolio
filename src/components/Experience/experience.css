@@ -41,6 +41,7 @@ color: var(--color-primary)
 
 @media screen and (max-width: 1024px) {
     .experience_container {
+        display:grid;
         grid-template-columns: 1fr;
         gap: 1rem;
     }
@@ -56,14 +57,15 @@ color: var(--color-primary)
     }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 760px) {
 .experience_container {
+    display:grid;
     grid-template-columns: 1fr;
     gap: 1rem;
 }
 
 .experience_container>div {
-    width: 90%;
+    width: 100%;
     padding: 2rem;
     margin: 0 auto;
 }

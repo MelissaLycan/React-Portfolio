@@ -87,7 +87,9 @@
         grid-template-columns: 1fr;
        gap: 0;
     }
-
+    .about_cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
     .about_me {
         width:50%;
         margin: 2rem auto 4rem;
@@ -109,7 +111,7 @@
         background: transparent;
     }
     .about_cards {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
     .about_content {
         text-align:center;
