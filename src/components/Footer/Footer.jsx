@@ -26,7 +26,7 @@ export function Footer() {
         >
           <i className={icon.name}></i>
         </a>
-      ))}
+      ))},
 
       <a href="https://www.melissalycan.com">
         <img
