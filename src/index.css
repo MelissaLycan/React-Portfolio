@@ -56,8 +56,7 @@ h1 {
 }
 
 section {
-    margin-top:8rem;
-    height: 100vh;
+    margin-top:1rem;
 }
 
 section > h2, section > h5 {
@@ -108,9 +107,9 @@ a:hover {
 img {
     display: block;
     object-fit: cover;
-    border-radius:50%;
-    max-width: 300px;
-    max-height: 300px;
+    border-radius:1.5rem;
+    max-width: 700px;
+    max-height: 700px;
 }
 
 /* Media Queries */

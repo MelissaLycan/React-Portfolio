@@ -18,7 +18,7 @@
 .about-image {
     border-radius: 1rem;
     overflow:hidden;
-    transform-origin: rotate(10deg);
+    transform: rotate(10deg);
 }
 .about-image:hover {
     transform: rotate(0deg);
@@ -74,6 +74,7 @@
     text-align: center;
     margin: 3rem;
 }
+
 
 
 

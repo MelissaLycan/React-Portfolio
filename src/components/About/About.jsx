@@ -1,6 +1,6 @@
 import React from "react";
 import './about.css';
-import ME from "../../assets/images/Nordic-Daughter-074.jpg";
+import ME from "../../assets/images/Melissa-Lycan-logo.jpg";
 import {FaAward} from 'react-icons/fa';
 import {FiUsers} from 'react-icons/fi';
 import {VscFolderLibrary} from 'react-icons/vsc';
@@ -18,6 +18,7 @@ export function About() {
           <div className="about-image">
             <img src={ME} alt="Melissa Lycan in a dark dress"/>
           </div>
+          
         </div>
       
         <div className="about_content">
@@ -51,17 +52,9 @@ export function About() {
               last 5 years I have taught HS Math in Denver. Currently I am honing my
               development skills and finishing certification in Full Stack Development
               so that I may build my own concepts and contribute to the greater
-              accomplishments of mankind with my skills and talents.  I believe in people and their incredible ability to be blissfully
-              vulnerable and intensely strong all in the same moment. I believe
-              creativity is the ultimate expression of this lifetime, whether it is
-              coding, music, writing, painting or whatever you so choose. I am driven
-              by unconditional love, a desire to constantly accept feedback that will
-              improve my character and perspective, and a wanderlust for adventure and
-              exploration that can only be attributed to a deep seeded ancestral
-              calling.
+              accomplishments of mankind with my skills and talents.  
             </p>
-
-            <a href="#contact" className="btn btn-primary">Let's Talk</a>
+            <a id='talkBtn' href="#contact" className="btn center btn-primary">Let's Talk</a>
             </div>
             </div>
           </div>

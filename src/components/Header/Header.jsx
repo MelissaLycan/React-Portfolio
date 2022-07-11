@@ -12,11 +12,11 @@ export function Header() {
       <h1 id="center">Melissa Lycan</h1>
       <h5 id="center"className="text-light">Full Stack Developer</h5>
       <Call />
-      <Socials />
-      
-      <div className= "me">
-        <img src={ ME } alt="Melissa Lycan"/>
+
+      <div className= "center">
+        <img className="me" src={ ME } alt="Melissa Lycan"/>
       </div>
+      <Socials />
       <a href="#projects" className='scroll_down'>Scroll Down</a>
       </div>
     </header>
