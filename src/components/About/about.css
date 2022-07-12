@@ -1,13 +1,13 @@
 .about_container {
     display: grid;
-    grid-template-columns: 35% 50%;
+    grid-template-columns: 1fr 2fr;
     grid-template-rows: 20% 35%;
-    gap: 15%;
+    gap: 2%;
 }
 
 .about_me {
-    width: 100%;
-    max-width: 300px;
+    width: 70%;
+    max-width: 250px;
     aspect-ratio: 1/1;
     border-radius: 2rem;
     background: linear-gradient(45deg, transparent, var(--color-primary),transparent
@@ -20,6 +20,7 @@
     border-radius: 1rem;
     overflow:hidden;
     transform: rotate(10deg);
+    transition: var(--transition);
 }
 .about-image:hover {
     transform: rotate(0deg);
@@ -76,22 +77,23 @@
     margin: 3rem;
 }
 
-
-
-
 @media screen and (max-width: 1024px) {
     .about-image {
-        visibility: hidden;
+        justify-content: center;
+        transform: scale(.5);
+        transition: var(--transition);
     }
     .about_container {
         grid-template-columns: 1fr;
-       gap: 0;
+       gap: 1rem;
     }
     .about_cards {
+        display:grid;
         grid-template-columns: repeat(2, 1fr);
+        gap:1rem;
     }
     .about_me {
-        width:50%;
+        width:100%;
         margin: 2rem auto 4rem;
         background: transparent;
     }
@@ -102,9 +104,6 @@
 }
 
 @media screen and (max-width: 650px) {
-    .about-image {
-        visibility: hidden;
-    }
     .about_me {
         width: 65%;
         margin: 0 auto 3rem;

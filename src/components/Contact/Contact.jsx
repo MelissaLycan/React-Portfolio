@@ -6,7 +6,7 @@ import { RiMessengerLine } from "react-icons/ri"
 const Contact = () => {
  
   return (
-    <section id="contact" className=" container">
+    <section id="contact" className="container">
       <h5 className="center">Get in Touch</h5>
       <h2 className="center">Contact Me</h2>
       <div className="contact_container">

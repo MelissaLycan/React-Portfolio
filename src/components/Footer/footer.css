@@ -1,3 +1,10 @@
-#footer {
-    background: --color-primary;
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-bg-primary);
+    height: 30%;
+    margin-bottom: 3rem;
+    margin-top:0;
 }

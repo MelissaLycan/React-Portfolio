@@ -3,6 +3,8 @@
     grid-template-columns: repeat(3, 250px);
     gap: 2rem;
     justify-content: space-around;
+    justify-items: center;
+    
 }
 
 .project_container > div {
@@ -11,22 +13,27 @@
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);
+    
 }
 #projects {
     text-align: center;
 }
 
 .project_item {
+    display: flex;
     width: 350px;
     border-radius:2rem;
     border: 1px solid black;
     background: rgba(1, 128, 132, 0.8);
     transition: var(--transition);
+    justify-content: center;
 }
 
 .project-item:hover {
     border-color:var(--color-primary-variant);
     background:transparent;
+    cursor: default;
+
 }
 .project-image {
     width: 250px;
@@ -35,7 +42,8 @@
     overflow: hidden;
     justify-content: center;
     border-radius:1.5rem;
-    margin-top:1rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
     background-color: rgb(13, 225, 225);
 }
 .project-title {
@@ -64,7 +72,6 @@
     .project_container {
         grid-template-columns: 1fr 1fr;
         gap:1.5rem;
-
     }
 }
 

@@ -2,7 +2,8 @@
     display:grid;
     border-radius: 1rem;
     grid-template-columns: repeat(2, 30% 58%);
-    gap: 12%;
+    gap: 2%;
+    justify-items: center;
 }
 
 .contact_option {
@@ -12,7 +13,8 @@
     text-align: center;
     width: 80%;
     height:10%;
-    margin-bottom:2rem;
+    min-width: 300px;
+    margin-bottom:1rem;
     padding: 1.2rem;
 }
 
@@ -24,7 +26,7 @@
     text-align: center;
     width: 90%;
     height:27%;
-    margin-bottom:2rem;
+    justify-content: center;
 }
 .form {
     display:grid;
@@ -35,7 +37,17 @@
     padding: 1rem;
     border-radius: 1.5;
 }
-
+.form > input {
+    border-radius: 1rem;
+    text-indent: 1rem;
+    min-width: 300px;
+}
+.form > textarea {
+    border-radius: 1rem;
+    text-indent: 1rem;
+    text-align: justify;
+    min-width: 400px;
+}
 .center {
     text-align: center;
 }
@@ -45,36 +57,30 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: .5rem;
+    justify-items: center;
 }
 
 .contact_option {
     display: grid;
     width: 90%;
     height: 27%;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     justify-items: center;
 }
 }
 @media screen and (max-width: 650px) {
-    .about-image {
-        visibility: hidden;
+    .contact_container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: .5rem;
+        justify-items: center;
     }
-
-    .about_me {
-        width: 65%;
-        margin: 0 auto 3rem;
-        background: transparent;
-    }
-
-    .about_cards {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .about_content {
-        text-align: center;
-    }
-
-    .about_content p {
-        margin: 1.5rem 0;
+    
+    .contact_option {
+        display: grid;
+        width: 90%;
+        height: 27%;
+        margin-bottom: 1rem;
+        justify-items: center;
     }
 }
