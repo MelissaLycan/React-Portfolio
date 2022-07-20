@@ -9,7 +9,7 @@
 
 .project_container > div {
     background:var(--color-bg-variant);
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);

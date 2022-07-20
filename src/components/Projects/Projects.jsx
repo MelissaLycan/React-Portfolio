@@ -32,7 +32,7 @@ const data = [
   {
     id:4,
     image: img4,
-    title: "InvetoryManagement (SQL)",
+    title: "InventoryManagement (SQL)",
     github: 'https://github.com/MelissaLycan/Inventory-Management-App.git',
     demo: 'https://dry-caverns-71259.herokuapp.com'
   },
@@ -48,8 +48,21 @@ const data = [
     title: "Creative/Projects (Website)",
     github: 'https://github.com/MelissaLycan',
     demo: 'https://www.melissalycan.com'
+  },
+  {
+    id:7,
+    image: img7,
+    title: "MERN Stack (FanTaskTik)",
+    github: 'https://github.com/MelissaLycan/Fan-Task-Tic.git',
+    demo: 'https://radiant-chamber-41757.herokuapp.com/'
+  },
+  {
+    id:8,
+    image: img8,
+    title: "Front-End Html/CSS (FanApp)",
+    github: 'https://github.com/MelissaLycan/Project-1.git',
+    demo: 'https://melissalycan.github.io/Project-1/'
   }
-  
   
 
 ]
