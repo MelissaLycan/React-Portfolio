@@ -6,6 +6,8 @@ import img3 from "../../assets/images/img3.png";
 import img4 from "../../assets/images/img4.png";
 import img5 from "../../assets/images/img5.png";
 import img6 from "../../assets/images/img6.png";
+import img7 from "../../assets/images/img7.jpg";
+import img8 from "../../assets/images/img8.jpg";
 
 const data = [
   {
